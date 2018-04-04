@@ -1,6 +1,6 @@
 Feature: Bank Account 
 
-Scenario: Deposit 1000 euros and ask the statement balance 
+Scenario: Deposit 1000 euros and Print the statement balance 
 	Given I deposit 1000 euros 
 	When I print the statement 
 	Then My balance should be 1000 
@@ -12,7 +12,7 @@ Scenario: Deposit and Withdraw and Print the statement balance
 	When I print the statement 
 	Then My balance should be 2500 
 	
-Scenario: I withdraw 1500 and ask the statement balance 
+Scenario: I withdraw 1500 and Print the statement balance 
 	Given I withdraw 1500 euros 
 	When I print the statement 
 	Then My balance should be -1500 
